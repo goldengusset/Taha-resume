@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link rel="stylesheet" href="practice.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav class="uli">
+        <img src="logo.png" class="logo" />
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <div class="textbox">
+        <h1>MY RESUME</h1>
+        <p>
+          this is my practice project and some preview
+          <br />
+          of my work.
+        </p>
+        <a href="" class="hero-btn">Visit Me To Know More</a>
+      </div>
+    </section>
+    <section class="marketing">
+      <h1>My Area Of Expertise</h1>
+
+      <div class="row">
+        <div class="marketing-col">
+          <h3>Coding With HTML and CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
+            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
+            numquam quod porro.
+          </p>
+        </div>
+        <div class="marketing-col">
+          <h3>Open To Internship</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
+            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
+            numquam quod porro.
+          </p>
+        </div>
+        <div class="marketing-col">
+          <h3>Full Understanding Of English</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
+            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
+            numquam quod porro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-row">
+      <div class="container">
+        <img src="product1.png" class="product-img" />
+        <p class="product-name">This is an example of a product</p>
+        <p class="dollar">$35</p>
+        <button>Add To Cart</button>
+      </div>
+      <div class="container">
+        <img src="product2.png" class="product-img" />
+        <p class="product-name">This is an example of a product</p>
+        <p class="dollar">$20</p>
+        <button>Add To Cart</button>
+      </div>
+      <div class="container">
+        <img src="product3.png" class="product-img" />
+        <p class="product-name">This is an example of a product</p>
+        <p class="dollar">$50</p>
+        <button>Add To Cart</button>
+      </div>
+    </section>
+
+    <div class="footer">
+      <h4 class="aboutus">About Me</h2>
+      <p class="aboutme">
+        من طاها شعانی هستم <br />
+        دانشجو رشته مهندسی کامیپوتر در دانشگاه آزاد اسلامی <br />
+        هستم html و css و python در حال یادگیری زبان های <br />
+        شماره تماس ==> 4390 948 0936    <br />
+        @goldengusset <== ایدی تلگرام
+      </p>
+    </div>
+
+    <!--------------Javascript for Toggle menu------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

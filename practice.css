@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 13, 252, 0.15), rgba(0, 13, 252, 0.15)), url('header-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li a:hover {
+  color: rgb(187, 187, 187);
+  transition: 0.5s;
+}
+
+.nav-links ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #590379;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+.textbox {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textbox h1 {
+  font-size: 56px;
+}
+
+.textbox p {
+  margin-top: 6px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #590379;
+  background: #590379;
+  transition: 0.5s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .textbox h1 {
+    font-size: 26px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #590379;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .container-row {
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: 6%;
+  }
+}
+
+.marketing {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.marketing h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.marketing p {
+  color: rgba(255, 255, 255, 0.796);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marketing-col {
+  flex-basis: 31%;
+  background-color: #9c45db;
+  border-radius: 10px;
+  padding: 20px 12px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.marketing-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.marketing-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+body {
+  background-color: #a334f5;
+}
+
+@media(max-width: 700px) {}
+
+.container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  margin-top: 8%;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #8b2ecd;
+  padding: 1%;
+  padding-bottom: 2%;
+}
+
+
+.product-img {
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.product-img:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.dollar {
+  color: rgb(224, 170, 22);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.product-name {
+  color: rgb(212, 211, 211);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 2%;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.container button {
+  background-color: transparent;
+  color: white;
+  float: right;
+  border-radius: 10px;
+  padding: 3% 5%;
+  border: solid white 1px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: white;
+  color: #a334f5;
+  border: 1px solid #a334f5;
+}
+
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+.aboutus{
+  display: flex;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 1%;
+  font-weight: 600;
+  font-size: 26px;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme{
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+}
