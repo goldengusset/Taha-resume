@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice</title>
-    <link rel="stylesheet" href="practice.css" />
+    <title>Taha's Resume</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
@@ -14,17 +14,22 @@
   <body>
     <section class="header">
       <nav class="uli">
-        <img src="logo.png" class="logo" />
+        <img src="logo.png" class="logo"/>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button" id="overlay">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
         <div class="nav-links" id="navlinks">
-          <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
-            <li><a href="#">About US</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Shop</a></li>
+            <label for="sidebar-active" class="close-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <li><a href="#marketing">About Me</a></li>
+            <li><a href="#aboutus">Contact</a></li>
+            <li><a href="#shop">Shop</a></li>
             <li><a href="#">Home</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showmenu()"></i>
       </nav>
 
       <div class="textbox">
@@ -37,41 +42,62 @@
         <a href="" class="hero-btn">Visit Me To Know More</a>
       </div>
     </section>
-    <section class="marketing">
+
+<section class="js_link">
+  <h1>Links To My Java Script Projects</h1>
+  <div class="alinks">
+  
+    <a href="backgroundpaladrom.html" class="jslinks">
+    Background Color Changer
+    <br>
+    <br>
+    &
+    <br>
+    <br>
+    Paladrom Checker
+  </a>
+
+ 
+    <a href="randomrps.html" class="jslinks">
+    Calculator
+    <br>
+    <br>
+    &
+    <br>
+    <br>
+    Rock Paper Scissors
+  </a>
+
+</div>
+</section>
+
+    <section class="marketing" id="marketing">
       <h1>My Area Of Expertise</h1>
 
       <div class="row">
         <div class="marketing-col">
           <h3>Coding With HTML and CSS</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
-            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
-            numquam quod porro.
+            This exact website that you are currently witnessing and many more
+            that i will be making.
           </p>
         </div>
         <div class="marketing-col">
-          <h3>Open To Internship</h3>
+          <h3 onclick="">Open To Internship</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
-            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
-            numquam quod porro.
+            I am open to working and learning as an intern for any compony and any subject alongside studying at university.
           </p>
         </div>
         <div class="marketing-col">
           <h3>Full Understanding Of English</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            nobis, nisi ad quisquam voluptatum amet laboriosam possimus eius
-            odit voluptates culpa, iste perspiciatis rem enim ex reprehenderit
-            numquam quod porro.
+            i have years of studying and learning the english language and understand it completely in all subjects.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="container-row">
+    <section class="container-row" id="shop">
       <div class="container">
         <img src="product1.png" class="product-img" />
         <p class="product-name">This is an example of a product</p>
@@ -92,7 +118,7 @@
       </div>
     </section>
 
-    <div class="footer">
+    <div class="footer" id="aboutus">
       <h4 class="aboutus">About Me</h2>
       <p class="aboutme">
         من طاها شعانی هستم <br />
@@ -103,15 +129,5 @@
       </p>
     </div>
 
-    <!--------------Javascript for Toggle menu------------------->
-    <script>
-      var navlinks = document.getElementById("navlinks");
-      function showmenu() {
-        navlinks.style.right = "0";
-      }
-      function hidemenu() {
-        navlinks.style.right = "-200px";
-      }
-    </script>
   </body>
 </html>

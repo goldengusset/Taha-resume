@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript project 1</title>
+    <link rel="stylesheet" href="jstrain.css" />
+  </head>
+  <body>
+    <div class="colorflipper">
+      <h1>Background Color Flipper</h1>
+      <div class="flipbutton">
+        <button class="flippers but1" onclick="setcolor('#FF6961')">red</button>
+        <button class="flippers but2" onclick="setcolor('#A2DDF0')">
+          Blue
+        </button>
+        <button class="flippers but3" onclick="setcolor('#77DD77')">
+          Green
+        </button>
+        <button class="flippers but4" onclick="randomcolor()">Random</button>
+      </div>
+    </div>
+
+    <div class="paladromchecker">
+      <h1>Paladrom Checker</h1>
+      <input id="input" type="text" placeholder="Type Something" />
+      <button onclick="check()" class="button_p">Check</button>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
